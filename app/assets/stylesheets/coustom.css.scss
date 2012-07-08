@@ -5,7 +5,9 @@
 .btn-warning {
   @include buttonBackground($primaryButtonBackground, adjust-hue($primaryButtonBackground, 20));
 }
-
+/*.btn-primary{
+  font-size: 12px;
+}*/
 $grayMediumLight: #eaeaea;
 
 @mixin box_sizing {
@@ -164,10 +166,11 @@ aside {
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
-  width: 100%;
-  padding: 10px;
+  width: 70%;
+  padding: 8px;
   height: auto;
   margin-bottom: 15px;
+  background-color: #fff;
   @include box_sizing;
 }
 
