@@ -61,6 +61,16 @@ describe "User pages" do
 			end
 		end
 
+		describe "trying sign up while user is signed in" do
+			let(:user) { FactoryGirl.create(:user) }
+			before do
+				sign_in user
+				visit signup_path
+			end
+
+			it { should have_selector('title', :title => 'Sign up') }
+		end
+
 	end
 
 	describe "edit" do
