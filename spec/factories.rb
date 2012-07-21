@@ -9,5 +9,10 @@ FactoryGirl.define  do
 			admin true
 		end
 	end
+
+	factory :micropost do
+		content "Years ago when I was younger..."
+		user
+	end
 end
 	
